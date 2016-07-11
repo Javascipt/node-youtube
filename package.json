@@ -1,0 +1,29 @@
+{
+  "name": "rub",
+  "version": "1.0.0",
+  "description": "Youtube snapshot, crop and more ... !",
+  "main": "script.js",
+  "dependencies": {
+    "youtube-dl": "^1.11.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Javascipt/rub.git"
+  },
+  "keywords": [
+    "Youtube",
+    "capture",
+    "snapshot",
+    "crop"
+  ],
+  "author": "Khalid REHIOUI <Array.prototype@gmail.com> (http://github.com/javascipt)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Javascipt/rub/issues"
+  },
+  "homepage": "https://github.com/Javascipt/rub#readme"
+}
