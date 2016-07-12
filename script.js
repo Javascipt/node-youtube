@@ -68,6 +68,24 @@ module.exports = function (url) {
             });
 
             return deferred.promise;
+        },
+        gif : function (startTime, endTime, filePath, size, fps) {
+            var sec             = require('sec');
+            var gif             = require('./modules/gif.js')
+            var deferred        = Q.defer();
+            var cropFilePath    = path.resolve(__dirname, 'tmp', 'crop-'+ ( + new Date() ) + '.mp4');
+            var duration        = sec(endTime) - sec(startTime);
+            this.crop(startTime, endTime, cropFilePath)
+                .then(function () {
+                    gif(cropFilePath, filePath, startTime, duration, size, fps, function (err) {
+                        if(err) return deferred.reject(err);
+                        deferred.resolve();
+                    })
+                }).catch(function(err) {
+                    deferred.reject(err)
+                })
+
+            return deferred.promise;
         }
     }
 }

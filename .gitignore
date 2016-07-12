@@ -1,3 +1,4 @@
 node_modules/
 tmp/video*
 tmp/snap*
+tmp/crop*
