@@ -6,6 +6,7 @@
   "dependencies": {
     "fluent-ffmpeg": "^2.1.0",
     "q": "^1.4.1",
+    "sec": "^1.0.0",
     "youtube-dl": "^1.11.1"
   },
   "devDependencies": {},
