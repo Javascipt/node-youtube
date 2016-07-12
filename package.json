@@ -4,6 +4,8 @@
   "description": "Youtube snapshot, crop and more ... !",
   "main": "script.js",
   "dependencies": {
+    "fluent-ffmpeg": "^2.1.0",
+    "q": "^1.4.1",
     "youtube-dl": "^1.11.1"
   },
   "devDependencies": {},
@@ -18,6 +20,7 @@
     "Youtube",
     "capture",
     "snapshot",
+    "screenshot",
     "crop"
   ],
   "author": "Khalid REHIOUI <Array.prototype@gmail.com> (http://github.com/javascipt)",
