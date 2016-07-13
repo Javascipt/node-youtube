@@ -1,7 +1,7 @@
 {
   "name": "rub",
   "version": "1.0.0",
-  "description": "Youtube snapshot, crop and more ... !",
+  "description": "Cutting youtube videos, or making snapshots and GIFs out of them",
   "main": "script.js",
   "dependencies": {
     "fluent-ffmpeg": "^2.1.0",
@@ -22,7 +22,11 @@
     "capture",
     "snapshot",
     "screenshot",
-    "crop"
+    "crop",
+    "cut",
+    "part",
+    "gif",
+    "animated"
   ],
   "author": "Khalid REHIOUI <Array.prototype@gmail.com> (http://github.com/javascipt)",
   "license": "MIT",
