@@ -1,21 +1,10 @@
-var startPath   = require('./startpath');
 var ffmpeg      = require('fluent-ffmpeg');
 var move        = require('./move');
 var path        = require('path')
 
 module.exports = function (startTime, duration, videoFilePath, cropFilePath, filePath, cb) {
     function cropCallBack () {
-        startPath().then(function (stpath) {
-            move(cropFilePath, path.resolve(stpath, filePath))
-                .then(function () {
-                    cb && cb();
-                })
-                .catch(function (err) {
-                    cb && cb(err);
-                })
-        }).catch(function (err) {
-            cb && cb(err);
-        })
+        move(cropFilePath, path.resolve(filePath)).then(cb).catch(cb)
     }
 
     ffmpeg(videoFilePath)

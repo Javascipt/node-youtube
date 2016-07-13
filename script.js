@@ -77,7 +77,7 @@ module.exports = function (url) {
             var duration        = sec(endTime) - sec(startTime);
             this.crop(startTime, endTime, cropFilePath)
                 .then(function () {
-                    gif(cropFilePath, filePath, startTime, duration, size, fps, function (err) {
+                    gif(cropFilePath, filePath, '00', duration, size, fps, function (err) {
                         if(err) return deferred.reject(err);
                         deferred.resolve();
                     })
