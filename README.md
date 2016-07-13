@@ -5,7 +5,7 @@ Have you ever dreamt of creating a gif out of a youtube video ? Then you are in 
 
 ![GIF](https://www.dropbox.com/s/w7w870zd14jhr1x/file.gif?raw=1)
 
-(source : https://www.youtube.com/watch?v=ja8pA2B0RR4)
+[GIF source](https://www.youtube.com/watch?v=ja8pA2B0RR4)
 
 This package allows you to take a screenshot a gif or a portion out of a youtube video. You need to have [ffmpeg](https://ffmpeg.org/) and [youtube-dl](http://youtube-dl.org/) installed.
 
