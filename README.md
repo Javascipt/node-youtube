@@ -1,4 +1,4 @@
-Cutting youtube videos, or making snapshots and GIFs out of them.
+Youtube to snapshots and GIFs.
 ================================================================
 
 Have you ever dreamt of creating a gif out of a youtube video ? Then you are in the right place
