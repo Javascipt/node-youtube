@@ -1,4 +1,3 @@
-
 var rub = require('../script.js');
 
 rub('https://www.youtube.com/watch?v= ????')

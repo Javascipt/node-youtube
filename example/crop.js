@@ -7,7 +7,3 @@ rub('https://www.youtube.com/watch?v= ????')
     }).catch(function (err) {
         console.log("err : ", err)
     });
-
-
-
-

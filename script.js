@@ -16,6 +16,8 @@ module.exports = function (url) {
                 snapShot(videoFilePath, time, snapshotFilePath, filePath, function (err) {
                     if(err) return setTimeout(checkSnap, 200);
                     ws.emit('close');
+                    fs.unlink(snapshotFilePath);
+                    fs.unlink(videoFilePath);
                     deferred.resolve();
                 })
             }
@@ -24,6 +26,8 @@ module.exports = function (url) {
             video.on('info', checkSnap);
             video.on('end', function() {
                 snapShot(videoFilePath, time, snapshotFilePath, filePath, function (err) {
+                    fs.unlink(snapshotFilePath);
+                    fs.unlink(videoFilePath);
                     if(err) return deferred.reject(err);
                     deferred.resolve();
                 })
@@ -51,6 +55,9 @@ module.exports = function (url) {
                         if(err) return setTimeout(checkCrop, 200);
                         ws.emit('close');
                         crop(startTime, duration, videoFilePath, cropFilePath, filePath, function (err) {
+                            fs.unlink(videoFilePath);
+                            fs.unlink(cropFilePath);
+                            fs.unlink(tmpSnap);
                             if(err) return deferred.reject(err);
                             deferred.resolve();
                         })
@@ -62,6 +69,9 @@ module.exports = function (url) {
             video.on('info', checkCrop);
             video.on('end', function() {
                 crop(startTime, duration, videoFilePath, cropFilePath, filePath, function (err) {
+                    fs.unlink(videoFilePath);
+                    fs.unlink(cropFilePath);
+                    fs.unlink(tmpSnap);
                     if(err) return deferred.reject(err);
                     deferred.resolve();
                 })
@@ -78,6 +88,7 @@ module.exports = function (url) {
             this.crop(startTime, endTime, cropFilePath)
                 .then(function () {
                     gif(cropFilePath, filePath, '00', duration, size, fps, function (err) {
+                        fs.unlink(cropFilePath);
                         if(err) return deferred.reject(err);
                         deferred.resolve();
                     })
