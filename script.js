@@ -49,7 +49,7 @@ module.exports = function (url) {
             var checkCrop       = function () {
                 if(duration < 1) {
                     ws.emit('close');
-                    deferred.reject(new Error('The end time needs to be greather than start time'));
+                    return deferred.reject(new Error('The end time needs to be greather than start time'));
                 } else {
                     snapShot(videoFilePath, endTime, tmpSnap, null, function (err) {
                         if(err) return setTimeout(checkCrop, 200);

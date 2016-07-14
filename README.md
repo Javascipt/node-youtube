@@ -21,7 +21,7 @@ This package is the son of these two amazing parents:
 ## Installation :
 
 ```bash
-  $ npm install rub
+  $ npm install youtube.com
 ```
 
 ## How does it work ?
@@ -29,9 +29,9 @@ This package is the son of these two amazing parents:
 ####Crop a youtube video :
 
 ```javascript
-    var rub = require('rub');
+    var youtube = require('youtube.com');
 
-    rub('http://www.youtube.com/watch?v= ????')
+    youtube('http://www.youtube.com/watch?v= ????')
         .crop('0:05', '0:25', './file.mp4')
         .then(function () {
             console.log("Done");
@@ -46,9 +46,9 @@ This format is exactly the same we specify when downloading a youtube video usin
 ####Take a screenshot :
 
 ```javascript
-    var rub = require('rub');
+    var youtube = require('youtube.com');
 
-    rub('https://www.youtube.com/watch?v= ???')
+    youtube('https://www.youtube.com/watch?v= ???')
         .snapshot('1:00', './file.jpg')
         .then(function () {
             console.log("Done");
@@ -62,9 +62,9 @@ The `.snapshot()` method also takes the format as its 3rd argument.
 ####Creating a GIF :
 
 ```javascript
-    var rub = require('rub');
+    var youtube = require('youtube.com');
 
-    rub('https://www.youtube.com/watch?v= ????')
+    youtube('https://www.youtube.com/watch?v= ????')
         .gif('0:05', '0:35', './file.gif')
         .then(function () {
             console.log("Done");

@@ -1,7 +1,7 @@
 {
-  "name": "rub",
-  "version": "1.0.1",
-  "description": "Cutting youtube videos, or making snapshots and GIFs out of them",
+  "name": "youtube.com",
+  "version": "1.0.0",
+  "description": "Youtube crop, snapshots and GIFs",
   "main": "script.js",
   "dependencies": {
     "fluent-ffmpeg": "^2.1.0",
@@ -10,12 +10,9 @@
     "youtube-dl": "^1.11.1"
   },
   "devDependencies": {},
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Javascipt/rub.git"
+    "url": "git+https://github.com/Javascipt/node-youtube.git"
   },
   "keywords": [
     "Youtube",
@@ -31,7 +28,7 @@
   "author": "Khalid REHIOUI <Array.prototype@gmail.com> (http://github.com/javascipt)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/Javascipt/rub/issues"
+    "url": "https://github.com/Javascipt/node-youtube/issues"
   },
-  "homepage": "https://github.com/Javascipt/rub#readme"
+  "homepage": "https://github.com/Javascipt/node-youtube#readme"
 }
