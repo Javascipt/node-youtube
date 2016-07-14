@@ -1,6 +1,6 @@
 {
   "name": "rub",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Cutting youtube videos, or making snapshots and GIFs out of them",
   "main": "script.js",
   "dependencies": {
