@@ -1,9 +1,13 @@
 var youtubedl   = require('youtube-dl');
+var parser      = require('./modules/url-parser');
 var path        = require('path');
 var fs          = require('fs');
 var Q           = require('q');
 
-module.exports = function (url) {
+module.exports = function (urlOrVidId) {
+    
+    var url = parser(urlOrVidId);
+    
     return {
         snapshot : function (time, filePath, format) {
             var snapShot            = require('./modules/snapshot');

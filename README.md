@@ -30,7 +30,10 @@ Instantiate the `youtube` object :
 
 ```javascript
     var Youtube = require('youtube.com');
-    var youtube = Youtube('http://www.youtube.com/watch?v= ????');
+    var youtube = Youtube('http://www.youtube.com/watch?v=ategZqxHkz4');
+    
+    // You also can specify only the video
+    var youtube = Youtube('ategZqxHkz4');
 ```
 
 ####Crop a youtube video :

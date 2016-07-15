@@ -1,12 +1,13 @@
 {
   "name": "youtube.com",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Youtube crop, snapshots and GIFs",
   "main": "script.js",
   "dependencies": {
     "fluent-ffmpeg": "^2.1.0",
     "q": "^1.4.1",
     "sec": "^1.0.0",
+    "url-parse": "^1.1.1",
     "youtube-dl": "^1.11.1"
   },
   "devDependencies": {},
