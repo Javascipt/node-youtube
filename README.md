@@ -26,13 +26,17 @@ This package is the son of these two amazing parents:
 
 ## How does it work ?
 
+Instantiate the `youtube` object :
+
+```javascript
+    var Youtube = require('youtube.com');
+    var youtube = Youtube('http://www.youtube.com/watch?v= ????');
+```
+
 ####Crop a youtube video :
 
 ```javascript
-    var youtube = require('youtube.com');
-
-    youtube('http://www.youtube.com/watch?v= ????')
-        .crop('0:05', '0:25', './file.mp4')
+    youtube.crop('0:05', '0:25', './file.mp4')
         .then(function () {
             console.log("Done");
         }).catch(function (err) {
@@ -46,10 +50,7 @@ This format is exactly the same we specify when downloading a youtube video usin
 ####Take a screenshot :
 
 ```javascript
-    var youtube = require('youtube.com');
-
-    youtube('https://www.youtube.com/watch?v= ???')
-        .snapshot('1:00', './file.jpg')
+    youtube.snapshot('1:00', './file.jpg')
         .then(function () {
             console.log("Done");
         }).catch(function (err) {
@@ -62,10 +63,7 @@ The `.snapshot()` method also takes the format as its 3rd argument.
 ####Creating a GIF :
 
 ```javascript
-    var youtube = require('youtube.com');
-
-    youtube('https://www.youtube.com/watch?v= ????')
-        .gif('0:05', '0:35', './file.gif')
+    youtube.gif('0:05', '0:35', './file.gif')
         .then(function () {
             console.log("Done");
         }).catch(function (err) {
