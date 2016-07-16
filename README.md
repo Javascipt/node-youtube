@@ -30,9 +30,11 @@ Instantiate the `youtube` object :
 
 ```javascript
     var Youtube = require('youtube.com');
+    
+    // You can instantiate the youtube object using the video url
     var youtube = Youtube('http://www.youtube.com/watch?v=ategZqxHkz4');
     
-    // You also can specify only the video
+    // or you can also specify the video id
     var youtube = Youtube('ategZqxHkz4');
 ```
 
