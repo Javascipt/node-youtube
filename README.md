@@ -16,7 +16,7 @@ This package is the son of these two amazing parents:
 
 ### Dependencies:
 
-> This package depends on [ffmpeg](https://ffmpeg.org/) and [youtube-dl](http://youtube-dl.org/), you need to get them installed.
+> You need to get [ffmpeg](https://ffmpeg.org/) installed to start using this package.
 
 ## Installation :
 
