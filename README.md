@@ -80,3 +80,14 @@ The `.gif()` method takes 2 more arguments, which are `size` and `fps`
 - fps : an integer representing the fps of the final gif
 
 You can find more details on these 2 arguments on the [Fluent-ffmpeg package](https://github.com/fluent-ffmpeg/node-fluent-ffmpeg).
+
+#### Downloading a video
+
+```javascript
+    youtube.download('file.mp4', format)
+        .then(function () {
+            console.log("done");
+        });
+```
+
+Again, the format is the same as the one mentioned before.

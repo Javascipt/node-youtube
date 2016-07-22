@@ -1,6 +1,6 @@
 {
   "name": "youtube.com",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "Youtube crop, snapshots and GIFs",
   "main": "script.js",
   "dependencies": {
@@ -24,7 +24,8 @@
     "cut",
     "part",
     "gif",
-    "animated"
+    "animated",
+    "download"
   ],
   "author": "Khalid REHIOUI <Array.prototype@gmail.com> (http://github.com/javascipt)",
   "license": "MIT",
