@@ -1,6 +1,8 @@
 Youtube to snapshots and GIFs.
 ================================================================
 
+![youtube.com](https://api.travis-ci.org/Javascipt/node-youtube.svg)
+
 Have you ever dreamt of creating a gif out of a youtube video ? Then you are in the right place
 
 ![GIF](https://www.dropbox.com/s/w7w870zd14jhr1x/file.gif?raw=1)
