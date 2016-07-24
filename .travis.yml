@@ -1,12 +1,6 @@
 node_js:
   - '4'
   - '5'
-matrix:
-  include:
-    - os: linux
-      env: NODE_VERSION=4
-    - os: linux
-      env: NODE_VERSION=5
 before_script: 
   - npm install -g mocha
   - npm install
