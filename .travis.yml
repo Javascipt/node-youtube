@@ -1,6 +1,7 @@
 node_js:
   - '4'
-  - '5'
+env: 
+  - NODE_VERSION=4
 before_script: 
   - npm install -g mocha
   - npm install
