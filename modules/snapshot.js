@@ -1,14 +1,16 @@
 var ffmpeg      = require('fluent-ffmpeg');
 var move        = require('./move');
 var path        = require('path');
-var fs = require('fs');
+var fileExists  = require('file-exists');
+var fs          = require('fs');
 
 module.exports = function (videoFilePath, time, snapshotFilePath, filePath, cb) {
     function snapCallBack () {
         if(filePath) {
             move(snapshotFilePath, path.resolve(filePath)).then(cb).catch(cb)
         } else {
-            fs.access(snapshotFilePath, fs.F_OK, cb);
+            // fs.access not supported
+            cb(fileExists(snapshotFilePath) ? null: new Error(snapshotFilePath + ' not found'));
         }
     }
 

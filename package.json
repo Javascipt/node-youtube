@@ -4,6 +4,7 @@
   "description": "Youtube crop, snapshots and GIFs",
   "main": "script.js",
   "dependencies": {
+    "file-exists": "^1.0.0",
     "fluent-ffmpeg": "^2.1.0",
     "q": "^1.4.1",
     "sec": "^1.0.0",
