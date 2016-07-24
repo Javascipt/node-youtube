@@ -15,6 +15,9 @@
     "type": "git",
     "url": "git+https://github.com/Javascipt/node-youtube.git"
   },
+  "scripts": {
+    "test": "mocha ./test/tests.js"
+  },
   "keywords": [
     "Youtube",
     "capture",

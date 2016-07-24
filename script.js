@@ -112,8 +112,10 @@ module.exports = function (urlOrVidId) {
             video.on('end', function() {
                 move(videoFilePath, filePath)
                     .then(function () {
+                        fs.unlink(videoFilePath);
                         deferred.resolve();
                     }).catch(function () {
+                        fs.unlink(videoFilePath);
                         deferred.reject();
                     })
             });
