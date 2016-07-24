@@ -4,9 +4,11 @@ matrix:
       env: NODE_VERSION=4
     - os: linux
       env: NODE_VERSION=5
-before_script: npm install -g mocha
-script:
+before_script: 
+  - npm install -g mocha
+  - npm install
   - node_modules/fluent-ffmpeg/tools/test-travis.sh
+script:
   - npm test
 sudo: false
 addons:
