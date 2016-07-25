@@ -1,6 +1,6 @@
 {
   "name": "youtube.com",
-  "version": "1.0.8",
+  "version": "1.1.0",
   "description": "Youtube crop, snapshots and GIFs",
   "main": "script.js",
   "dependencies": {
