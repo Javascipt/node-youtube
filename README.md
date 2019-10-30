@@ -3,7 +3,7 @@ Youtube to snapshots and GIFs.
 
 ![youtube.com](https://api.travis-ci.org/Javascipt/node-youtube.svg)
 
-Have you ever dreamt of creating a gif out of a youtube video ? Then you are in the right place
+Have you ever dreamt of creating a gif out of a youtube video? Then you are in the right place.
 
 ![GIF](https://www.dropbox.com/s/w7w870zd14jhr1x/file.gif?raw=1)
 
@@ -20,13 +20,13 @@ This package is the son of these two amazing parents:
 
 > You need to get [ffmpeg](https://ffmpeg.org/) installed to start using this package.
 
-## Installation :
+## Installation:
 
 ```bash
   $ npm install youtube.com
 ```
 
-## How does it work ?
+## How does it work?
 
 Instantiate the `youtube` object :
 
@@ -40,7 +40,7 @@ Instantiate the `youtube` object :
     var youtube = Youtube('ategZqxHkz4');
 ```
 
-####Crop a youtube video :
+#### Crop a youtube video:
 
 ```javascript
     youtube.crop('0:05', '0:25', './file.mp4')
@@ -54,7 +54,7 @@ Instantiate the `youtube` object :
 The `.crop()` method takes a 4th argument which is the format of the video to download example : `['--format=18']`
 This format is exactly the same we specify when downloading a youtube video using the [Youtube-dl package](https://github.com/fent/node-youtube-dl). Make sure to take a look at it for more info.
 
-####Take a screenshot :
+#### Take a screenshot:
 
 ```javascript
     youtube.snapshot('1:00', './file.jpg')
@@ -67,7 +67,7 @@ This format is exactly the same we specify when downloading a youtube video usin
 
 The `.snapshot()` method also takes the format as its 3rd argument.
 
-####Creating a GIF :
+#### Creating a GIF:
 
 ```javascript
     youtube.gif('0:05', '0:35', './file.gif')
@@ -83,7 +83,7 @@ The `.gif()` method takes 2 more arguments, which are `size` and `fps`
 
 You can find more details on these 2 arguments on the [Fluent-ffmpeg package](https://github.com/fluent-ffmpeg/node-fluent-ffmpeg).
 
-#### Downloading a video
+#### Downloading a video:
 
 ```javascript
     youtube.download('file.mp4', format)
@@ -93,3 +93,7 @@ You can find more details on these 2 arguments on the [Fluent-ffmpeg package](ht
 ```
 
 Again, the format is the same as the one mentioned before.
+
+### License
+
+MIT
